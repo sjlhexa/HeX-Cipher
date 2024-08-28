@@ -1,6 +1,5 @@
 # HeX-Cipher
 
-# Project Title
 Caesar Cipher But on Steroids
 
 Supports both GUI as well as CLI
