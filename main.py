@@ -35,7 +35,7 @@ def jumble_text(text, magic_number, mode='super_secret', no_spaces=False):
 class SecretMsgApp:
     def __init__(self, master):
         self.master = master
-        master.title("HeX Cypher")
+        master.title("HeX Cipher")
 
         # Setting up the GUI
         tk.Label(master, text="Type your secret message:").pack(pady=5)
