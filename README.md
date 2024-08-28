@@ -1,6 +1,6 @@
 # HeX-Cipher
 
-Caesar Cipher But on Steroids
+Encrypt and decrypt messages with a simple substitution cipher
 
 Supports both GUI as well as CLI
 
@@ -14,15 +14,22 @@ Supports both GUI as well as CLI
 
 GUI =>
 ```bash
-  python cipher.py
+  python main.py
 ```
 
 CLI =>
 ```bash
-  python cipher.py <password> <shift> [-d]
+  python main.py <password> <shift> [option (if not encrypt)]
 ```
 
+Options:
+```bash
 
+  -h, --help          show this help message and exit
+  -u, --unscramble    Unscramble a message
+  -s, --super-sneaky  Replace spaces with $@
+  encrypt : by default 
+```
 ## Input
 
 * TEXT to Encode/Decode
@@ -35,3 +42,25 @@ CLI =>
 
 ![HeX Cipher](https://github.com/user-attachments/assets/5f0e0f85-3e47-4205-aebe-53e558a74483)
 
+## Example CLI:
+
+Encrypt a message:
+
+```bash
+    python3 main.py "Hello, World!" 7
+```
+
+Decrypt a message:
+```bash
+    python3 main.py "Olssv, Dvysk!" 7 -u
+```
+
+Use super sneaky mode (replace spaces):
+```bash
+    python3 main.py "Hello World" 7 -s
+```
+
+Get help:
+```bash
+    python3 main.py -h
+```
