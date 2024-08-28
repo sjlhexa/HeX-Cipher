@@ -1,2 +1,2 @@
-# HeX-Cypher
+# HeX-Cipher
 Caesar Cipher But BETTER 
